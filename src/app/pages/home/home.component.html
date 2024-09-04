@@ -1,0 +1,126 @@
+<div class="min-h-dvh h-dvh">
+    <header class="h-5/6 w-ful">
+        <div class="h-full bg-[url('assets/img/fundo-cabecalho.svg')] bg-no-repeat bg-cover bg-center">
+            <app-navbar></app-navbar>
+            <div class="flex justify-around">
+                <div class="mt-40">
+                    <h1 class="text-4xl font-bold w-9/12"><span class="text-secondary">Studying</span> <span
+                            class="text-primary"> Online is now much
+                            easier</span></h1>
+
+                    <p class="mt-9 w-96">Skilline is an interesting platform that will teach you in more an interactive
+                        way
+                    </p>
+
+                    <div class="flex items-center mt-5 gap-5">
+                        <button class="bg-secondary px-8 py-3 rounded-full font-medium text-white hover:scale-105">Join
+                            for
+                            free</button>
+
+                        <button class="bg-white size-12 rounded-full flex justify-center items-center hover:scale-105">
+                            <img src="assets/img/icon-play.svg" class="size-5" alt="play">
+                        </button>
+
+                        <span class="text-sm">Watch how it works</span>
+                    </div>
+
+                </div>
+                <div>
+                    <img src="assets/img/aluna.svg" alt="aluna" class="size-11/12">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto ">
+
+        <section class="mt-20">
+            <p class="text-center">Trusted by 5,000+ Companies Worldwide</p>
+            <div class="flex justify-center gap-24">
+                <img src="assets/img/logo-google.svg" class="size-28" alt="google">
+                <img src="assets/img/logo-netflix.svg" class="size-28" alt="netflix">
+                <img src="assets/img/logo-airbnb.svg" class="size-28" alt="aibnb">
+                <img src="assets/img/logo-amazon.svg" class="size-28" alt="amazon">
+                <img src="assets/img/logo-facebook.svg" class="size-28" alt="facebook">
+                <img src="assets/img/logo-grab.svg" class="size-28" alt="grab">
+            </div>
+        </section>
+
+        <section class="mt-8 flex flex-col items-center py-10">
+
+            <h3 class="text-center text-2xl font-medium"><span class="text-primary">All-In-One</span> <span
+                    class="text-secondary">
+                    Cloud Software.</span></h3>
+
+            <p class="mt-4 text-center w-1/3">Skilline is one powerful online software suite that combines all the tools
+                needed to run a
+                successful school or office.
+            </p>
+
+            <div class="grid grid-cols-3 gap-14">
+                <app-card color="bg-primary" title="Online Billing, Invoicing, & Contracts"
+                    description="Simple and secure control of your organization’s financial and legal transactions. Send customized invoices and contracts"
+                    img="assets/img/icon-file.svg"></app-card>
+                <app-card color="bg-secondary" title="Easy Scheduling & Attendance Tracking"
+                    description="Schedule and reserve classrooms at one campus or multiple campuses. Keep detailed records of student attendance"
+                    img="assets/img/icon-calendar.svg"></app-card>
+                <app-card color="bg-tertiary" title="Customer Tracking"
+                    description="Automate and track emails to individuals or groups. Skilline’s built-in system helps organize your organization"
+                    img="assets/img/icon-users.svg"></app-card>
+            </div>
+
+        </section>
+
+        <section class="flex flex-col justify-center items-center my-12">
+
+
+            <h3 class="text-center text-2xl font-medium"><span class="text-primary">What is</span> <span
+                    class="text-secondary">
+                    CSkilline?</span></h3>
+
+            <p class="text-center w-1/2 mt-4">Skilline is a platform that allows educators to create online classes
+                whereby
+                they
+                can store the course
+                materials
+                online; manage assignments, quizzes and exams; monitor due dates; grade results and provide students
+                with feedback all
+                in one place.</p>
+            <div class="flex justify-center items-center gap-14 mt-14">
+
+                <div class="relative w-1/3">
+                    <img src="assets/img/mulher-instrutora.svg" alt="Mulher instrutora z-0" class="brightness-75">
+
+                    <div
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center gap-4">
+                        <h3 class="text-white">FOR INSTRUCTORS</h3>
+                        <button
+                            class="bg-transparent hover:scale-105 hover:bg-tertiary hover:border-tertiary hover:opacity-95 text-white border border-white rounded-full px-4 py-3">Start
+                            a
+                            class
+                            today</button>
+                    </div>
+                </div>
+
+                <div class="relative w-1/3">
+                    <img src="assets/img/grupo-alunos.svg" alt="Mulher instrutora z-0" class="brightness-75">
+
+                    <div
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center gap-4">
+                        <h3 class="text-white">FOR STUDENTS</h3>
+                        <button
+                            class="bg-transparent hover:scale-105 hover:bg-tertiary hover:border-tertiary hover:opacity-95 text-white border border-white rounded-full px-4 py-3">Enter
+                            access code</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <app-footer></app-footer>
+    </footer>
+
+</div>
