@@ -1,18 +1,19 @@
 <div class="min-h-dvh h-dvh">
-    <header class="h-5/6 w-ful">
+    <header class="h-5/6 w-full">
         <div class="h-full bg-[url('assets/img/fundo-cabecalho.svg')] bg-no-repeat bg-cover bg-center">
-            <app-navbar></app-navbar>
-            <div class="flex justify-around">
-                <div class="mt-40">
-                    <h1 class="text-4xl font-bold w-9/12"><span class="text-secondary">Studying</span> <span
-                            class="text-primary"> Online is now much
+            <app-navbar class="md:block hidden"></app-navbar>
+            <div class="flex flex-col md:flex-row md:justify-around px-4 justify-center items-center">
+                <div class="mt-10 md:mt-40">
+                    <h1 class="md:text-4xl text-2xl font-bold w-full md:w-9/12"><span
+                            class="text-secondary">Studying</span> <span class="text-primary"> Online is now much
                             easier</span></h1>
 
-                    <p class="mt-9 w-96">Skilline is an interesting platform that will teach you in more an interactive
+                    <p class="mt-9 w-full md:w-96">Skilline is an interesting platform that will teach you in more an
+                        interactive
                         way
                     </p>
 
-                    <div class="flex items-center mt-5 gap-5">
+                    <div class="flex flex-col md:flex-row items-center mt-5 gap-5">
                         <button class="bg-secondary px-8 py-3 rounded-full font-medium text-white hover:scale-105">Join
                             for
                             free</button>
@@ -25,8 +26,8 @@
                     </div>
 
                 </div>
-                <div>
-                    <img src="assets/img/aluna.svg" alt="aluna" class="size-11/12">
+                <div class="flex justify-center">
+                    <img src="assets/img/aluna.svg" alt="aluna" class=" size-10/12 md:size-11/12">
                 </div>
             </div>
         </div>
@@ -34,17 +35,19 @@
 
     <main class="container mx-auto ">
 
-        <section class="mt-20">
+        <section class="md:mt-20 mt-40">
             <p class="text-center">Trusted by 5,000+ Companies Worldwide</p>
-            <div class="flex justify-center gap-24">
-                <img src="assets/img/logo-google.svg" class="size-28" alt="google">
-                <img src="assets/img/logo-netflix.svg" class="size-28" alt="netflix">
-                <img src="assets/img/logo-airbnb.svg" class="size-28" alt="aibnb">
-                <img src="assets/img/logo-amazon.svg" class="size-28" alt="amazon">
-                <img src="assets/img/logo-facebook.svg" class="size-28" alt="facebook">
-                <img src="assets/img/logo-grab.svg" class="size-28" alt="grab">
+            <div class="flex justify-center flex-wrap gap-8  md:gap-24">
+                <img src="assets/img/logo-google.svg" class="size-16 md:size-28" alt="google">
+                <img src="assets/img/logo-netflix.svg" class="size-16 md:size-28" alt="netflix">
+                <img src="assets/img/logo-airbnb.svg" class="size-16 md:size-28" alt="aibnb">
+                <img src="assets/img/logo-amazon.svg" class="size-16 md:size-28" alt="amazon">
+                <img src="assets/img/logo-facebook.svg" class="size-16 md:size-28" alt="facebook">
+                <img src="assets/img/logo-grab.svg" class="size-16 md:size-28" alt="grab">
             </div>
         </section>
+
+        @defer(on viewport){
 
         <section class="mt-8 flex flex-col items-center py-10">
 
@@ -57,7 +60,7 @@
                 successful school or office.
             </p>
 
-            <div class="grid grid-cols-3 gap-14">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-14">
                 <app-card color="bg-primary" title="Online Billing, Invoicing, & Contracts"
                     description="Simple and secure control of your organization’s financial and legal transactions. Send customized invoices and contracts"
                     img="assets/img/icon-file.svg"></app-card>
@@ -70,6 +73,9 @@
             </div>
 
         </section>
+        }@placeholder {
+        <h1>teste</h1>
+        }
 
         <section class="flex flex-col justify-center items-center my-12">
 
@@ -86,9 +92,9 @@
                 online; manage assignments, quizzes and exams; monitor due dates; grade results and provide students
                 with feedback all
                 in one place.</p>
-            <div class="flex justify-center items-center gap-14 mt-14">
+            <div class="flex md:flex-row flex-col justify-center items-center gap-14 mt-14">
 
-                <div class="relative w-1/3">
+                <div class="relative w-10/12 md:w-1/3">
                     <img src="assets/img/mulher-instrutora.svg" alt="Mulher instrutora z-0" class="brightness-75">
 
                     <div
@@ -102,7 +108,7 @@
                     </div>
                 </div>
 
-                <div class="relative w-1/3">
+                <div class="relative w-10/12 md:w-1/3">
                     <img src="assets/img/grupo-alunos.svg" alt="Mulher instrutora z-0" class="brightness-75">
 
                     <div
@@ -114,6 +120,161 @@
                     </div>
                 </div>
             </div>
+
+        </section>
+
+        <section class="flex justify-center item">
+            <div class="flex gap-12 w-3/4 mt-20">
+                <div class="w-1/2">
+                    <h3 class="text-2xl font-medium text-primary">Everything you can do in a physical classroom,<span
+                            class="text-secondary">you can do with Skilline</span></h3>
+                    <p class="mt-5">Skilline’s school management software helps traditional and online schools manage
+                        scheduling,
+                        attendance, payments and
+                        virtual classrooms all in one secure cloud-based system.</p>
+
+                    <a href="#" class="mt-4 underline decoration-solid">Learn more</a>
+                </div>
+                <div class="w-1/2 flex justify-center">
+                    <img src="assets/img/school.svg" class="w-full" alt="escola">
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="flex flex-col justify-center items-center my-12">
+            <h3 class="text-center text-2xl font-medium"><span class="text-primary">Our</span> <span
+                    class="text-secondary">
+                    Features</span></h3>
+            <p class="text-center w-1/2 mt-4">This very extraordinary feature, can make learning activities more
+                efficient</p>
+
+            <div class="flex w-3/4 gap-4 mt-20">
+                <div class="w-3/5">
+                    <img src="assets/img/meet.svg" class="w-full" alt="Reunião meet">
+                </div>
+                <div class="w-auto">
+                    <h3 class="text-2xl font-medium text-primary">A <span class="text-secondary">user interface</span>
+                        designed for
+                        the classroom</h3>
+
+                    <ul class="flex mt-8 flex-col justify-start gap-4">
+                        <li>Teachers don’t get lost in the grid view and have a dedicated Podium space.</li>
+                        <li>TA’s and presenters can be moved to the front of the class.
+                        </li>
+                        <li>Teachers can easily see all students and class data at one time.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex w-3/4 gap-4 mt-20">
+
+                <div class="w-3/5">
+                    <h3 class="text-2xl font-medium text-primary"><span class="text-secondary">Tools</span>
+                        For Teachers And Learners</h3>
+
+                    <p class="mt-5 w-1/2">
+                        Class has a dynamic set of teaching tools built to be deployed and used during class.
+                        Teachers can handout assignments in real-time for students to complete and submit.
+                    </p>
+                </div>
+                <div class="w-3/5 flex justify-center items-center">
+                    <img src="assets/img/aluna-pensando.svg" class="w-3/4" alt="Reunião meet">
+                </div>
+            </div>
+
+            <div class="flex w-3/4 gap-4 mt-20">
+
+                <div class="w-3/5 flex justify-center items-center">
+                    <img src="assets/img/palacio.svg" class="w-3/4" alt="Reunião meet">
+                </div>
+                <div class="w-3/5">
+                    <h3 class="text-2xl font-medium text-primary">Assessments, <span
+                            class="text-secondary">Quizzes</span>, Tests</h3>
+
+                    <p class="mt-5 w-1/2">
+                        Easily launch live assignments, quizzes, and tests.
+                        Student results are automatically entered in the online gradebook.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex w-3/4 gap-4 mt-20">
+
+                <div class="w-10/12">
+                    <h3 class="text-2xl font-medium text-primary">Class Management <span class="text-secondary">Tools
+                            for Educators</span>
+                    </h3>
+
+                    <p class="mt-5 w-1/2">
+                        Class provides tools to help run and manage the class such as Class Roster, Attendance, and
+                        more. With the Gradebook,
+                        teachers can review and grade tests and quizzes in real-time.
+
+                    </p>
+                </div>
+                <div class="w-10/12 flex justify-center items-center">
+                    <img src="assets/img/grade_book.svg" class="w-10/12" alt="Reunião meet">
+                </div>
+            </div>
+
+            <div class="flex w-3/4 gap-32 mt-20">
+
+                <div class="w-10/12 flex justify-center items-center">
+                    <img src="assets/img/reuniao.svg" class="w-10/12" alt="Reunião meet">
+                </div>
+                <div class="w-10/12">
+                    <h3 class="text-2xl font-medium text-primary">One-on-One <span
+                            class="text-secondary">Discussions</span>
+                    </h3>
+
+                    <p class="mt-5 w-1/2">
+                        Teachers and teacher assistants can talk with students privately without leaving the Zoom
+                        environment.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex justify-center">
+
+                <button class="border border-secondary rounded-full px-4 py-3 text-secondary hover:scale-105">See more
+                    features</button>
+            </div>
+        </section>
+
+
+        <section class="flex justify-center my-12">
+
+            <div class="flex w-3/4 gap-32 mt-20">
+
+                <div class="w-10/12 flex justify-center items-center">
+                    <img src="assets/img/midias.svg" class="w-10/12" alt="Reunião meet">
+                </div>
+                <div class="w-10/12">
+
+                    <span class="flex items-center gap-4 text-primary">
+                        <span class="w-10 h-px bg-primary"></span>
+                        <span>INTEGRATIONS</span>
+                    </span>
+
+                    <h3 class="text-2xl font-medium text-primary">200+ educational tools and platform <span
+                            class="text-secondary">integrations</span>
+                    </h3>
+
+                    <p class="mt-5 w-1/2">
+                        Teachers and teacher assistants can talk with students privately without leaving the Zoom
+                        environment.
+                    </p>
+
+                    <button
+                        class="border mt-4 border-secondary rounded-full px-4 py-3 text-secondary hover:scale-105">See
+                        All Integrations</button>
+                </div>
+            </div>
+
+
 
         </section>
 
